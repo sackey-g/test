@@ -1,0 +1,55 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.hello {
+    background: rgb(225, 230, 240);
+    height: 250px;
+}
+
+.hello h1 {
+    font-size: 64px;
+    color: black;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+    padding-top: 185px;
+}
+
+/* ツールなど はじめ*/
+.container {
+    position: relative;
+    background: rgb(225, 230, 240);
+    height: 50vh;
+  }
+  
+  .wave {
+    position: absolute;
+    height: 70px;
+    width: 100%;
+    background: rgb(225, 230, 240);
+    bottom: 0;
+  }
+  
+  .wave::before, .wave::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+  }
+  
+  .wave::before {
+    width: 55%;
+    height: 109%;
+    background-color: #fff;
+    right: -1.5%;
+    top: 60%;
+  }
+  .wave::after {
+    width: 55%;
+    height: 100%;
+    background-color: rgb(225, 230, 240);
+    left: -1.5%;
+    top: 40%;
+  }
+/* ツールなど 終わり*/
