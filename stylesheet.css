@@ -7,7 +7,7 @@
 
 
 header {
-  height: 800px;
+  height: 1200px;
   width: 100%;
   background-image: linear-gradient(90deg, rgba(247, 93, 139, 1), rgba(254, 220, 64, 1));
 }
@@ -30,35 +30,84 @@ header {
 
 .box {
   height: 1000px;
-  margin: -600px 30% 0px 30%;
+  margin: -900px 30% 0px 30%;
   background: rgba( 255, 255, 255, 0.3 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  box-shadow: 0 8px 32px 0 rgba( 255, 255, 255, 0.18 );
   backdrop-filter: blur( 5.5px );
   -webkit-backdrop-filter: blur( 5.5px );
-  border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border-radius: 13px;
+  border: 0.5px solid rgba(255, 255, 255, 0.5);
 }
 
 .sackey {
   padding: 25px;
   height: 180px;
   width: 180px;
+  float: left;
 }
 
+.ID {
+  float: left;
+}
 
+.name {
+  font-size: 50px;
+  margin-top: 75px;
+}
 
+.namenoshita {
+  font-size: 25px;
+}
 
+.explain {
+  font-size: 28px;
+  margin-left: 40px;
+}
+
+.classname-ga-omoitsukanai {
+  height: 255px;
+}
+
+.button {
+  margin: 30px 0px 0px 40px;
+  font-size: 0;
+}
+
+.icon {
+  font-size: 23px;
+  vertical-align: bottom;
+  display: inline-block;
+  padding: 17px 55px;
+  background: rgb( 29, 161, 242);
+  box-shadow: 0 8px 32px 0 rgba( 255, 255, 255, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
 
 @media screen and (max-width: 800px) {
  .box {
-   margin: -600px 5% 0px 5%;
+   margin: -900px 5% 0px 5%;
  }
-
  .sackey {
    padding: 12.5px;
    height: 90px;
    width: 90px;
  }
+.name {
+  font-size: 25px;
+  margin-top: 37.5px;
+}
+.namenoshita {
+  font-size: 12.5px;
+}
+.explain {
+  font-size: 16px;
+}
+.classname-ga-omoitsukanai {
+  height: 127.5px;
+}
 
 }
 
