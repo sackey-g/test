@@ -1,55 +1,75 @@
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
 }
 
-.hello {
-    background: rgb(225, 230, 240);
-    height: 250px;
+
+
+header {
+  height: 800px;
+  width: 100%;
+  background-image: linear-gradient(90deg, rgba(247, 93, 139, 1), rgba(254, 220, 64, 1));
 }
 
-.hello h1 {
-    font-size: 64px;
-    color: black;
-    font-family: 'Nunito Sans', sans-serif;
-    text-align: center;
-    padding-top: 185px;
+.list {
+  float: left;
+  background: rgba( 255, 255, 255, 0.3 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 5.5px );
+  -webkit-backdrop-filter: blur( 5.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+}
+.list li{
+  list-style: none;
+  float: left;
+  font-size: 19px; /* 1919の19です */
 }
 
-/* ツールなど はじめ*/
-.container {
-    position: relative;
-    background: rgb(225, 230, 240);
-    height: 50vh;
-  }
-  
-  .wave {
-    position: absolute;
-    height: 70px;
-    width: 100%;
-    background: rgb(225, 230, 240);
-    bottom: 0;
-  }
-  
-  .wave::before, .wave::after {
-    content: "";
-    display: block;
-    position: absolute;
-    border-radius: 100% 50%;
-  }
-  
-  .wave::before {
-    width: 55%;
-    height: 109%;
-    background-color: #fff;
-    right: -1.5%;
-    top: 60%;
-  }
-  .wave::after {
-    width: 55%;
-    height: 100%;
-    background-color: rgb(225, 230, 240);
-    left: -1.5%;
-    top: 40%;
-  }
-/* ツールなど 終わり*/
+.box {
+  height: 1000px;
+  margin: -600px 30% 0px 30%;
+  background: rgba( 255, 255, 255, 0.3 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 5.5px );
+  -webkit-backdrop-filter: blur( 5.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.sackey {
+  padding: 25px;
+  height: 180px;
+  width: 180px;
+}
+
+
+
+
+
+@media screen and (max-width: 800px) {
+ .box {
+   margin: -600px 5% 0px 5%;
+ }
+
+ .sackey {
+   padding: 12.5px;
+   height: 90px;
+   width: 90px;
+ }
+
+}
+
+
+
+
+.atutu {
+  margin: 500px;
+  animation:0.3s linear infinite rotation1;
+}
+@keyframes rotation1{
+  0%{ transform:rotate(0);}
+  100%{ transform:rotate(360deg); }
+}
