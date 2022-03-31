@@ -6,6 +6,8 @@
     <link href="stylesheet.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <script src="https://kit.fontawesome.com/7de1a4185d.js" crossorigin="anonymous"></script>
+    <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/animon@1.0.1/dist/animon.css"/>
   </head>
   <body>
     <!-- ポインター制御 -->
@@ -13,53 +15,46 @@
     <div class="follower"></div>
     <!-- ポインター制御 -->
 
-    <header>
-      <!--
-      <div class="list">
-        <ul>
-          <li>あん</li>
-          <li>とぅいたー</li>
-          <span class="shikoshiko"><li>ぺにす</li></span>
-        </ul>
-      </div>
-      -->
-    </header>
-
     <main>
-      <div class="box">
+      <div class="chinpo"></div>
+      <div class="container">
+      <div class="box animonItem" data-effect="fadeIn" data-delay="50">
         <div class="classname-ga-omoitsukanai">
-          <img src="img/sackey.webp" class="sackey">
-          <div class="ID">
-            <h1 class="name">さっきーー</h1>
-            <p class="namenoshita">@sackey__</p>
-          </div>
+          <a href="https://twitter.com/sackey__">
+            <img src="img/sackey.webp" class="sackey">
+            <div class="ID">
+              <h1 class="name">さっきーー</h1>
+              <p class="namenoshita">@sackey__ <i class="fa-solid fa-link namenoshita"></i></p>
+            </div>
+          </a>
         </div>
-        <p class="explain">スマホを買ったり、<br>パソコンを触ったりしている中学生です</p>
+        <p class="explain">スマホを買ったり、<br>パソコンを触ったりしている中学生です<br>よろしくお願いします👋</p>
         <br>
-        <h2 class="shitama">わたくしのツイート</h2>
-          <a class="twitter-timeline" data-height="500" href="https://twitter.com/sackey__?ref_src=twsrc%5Etfw">Tweets by sackey__</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        <!--
-        <div class="button">
-          <div class="icon">
-             <i class="fa-brands fa-twitter"></i>
-          </div>
-          <div class="icon">
-             <i class="fa-brands fa-twitter"></i>
-          </div>
-          <div class="icon">
-             <i class="fa-brands fa-twitter"></i>
-          </div>
+        <div class="イチモツ">
+          <h2 class="shitama">特に書くことなくて草</h2>
+          <p class="sentence">（ ＾ω＾）おっそうだな😤😩🥸</p>
         </div>
-        -->
-
+        <div class="イチモツ">
+          <h2 class="shitama">わたくしのツイート✏️</h2>
+          <a class="twitter-timeline" data-height="800" href="https://twitter.com/sackey__?ref_src=twsrc%5Etfw">Tweets by sackey__</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="イチモツ">
+          <h2 class="shitama">「オマ●コ〜〜♫」ボタン</h2>
+          <p class="sentence">数多くのご要望によって<br>実装する運びとなりました 🥳</p>
+          <p class="sentence" id="joseiki">「オマ●コ〜〜♫」ボタン</p>
+          <p style="font-size: 1px; margin-left: 40px;">心して押しましょう<br>この文章読めてる人いたらキモい</p>
+        </div>
       </div>
-
-      <div class="antutu">
-
-      </div>
+    </div>
     </main>
-        <mg src="img/antutu.webp" class="antutu">
+
     <script src="https://unpkg.com/animon@1.0.1/dist/animon.iife.js"></script>
+    <script>
+      Animon.animon();
+    </script>
     <script src="script.js"></script>
+    <script>
+      twemoji.parse(document.body);
+    </script>
   </body>
 </html>
