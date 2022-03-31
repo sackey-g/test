@@ -4,33 +4,27 @@
   text-decoration: none;
 }
 
+/* Twemoji de 会館　（ ＾ω＾）おっ */
+img.emoji {
+  height: 1em;
+  width: 1em;
+  margin: 0 .05em 0 .1em;
+  vertical-align: -0.1em;
+}
 
 
-header {
-  height: 1200px;
-  width: 100%;
+main {
+  height: 2500px;
   background-image: linear-gradient(90deg, rgba(247, 93, 139, 1), rgba(254, 220, 64, 1));
 }
 
-.list {
-  float: left;
-  background: rgba( 255, 255, 255, 0.3 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 5.5px );
-  -webkit-backdrop-filter: blur( 5.5px );
-  border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-}
-.list li{
-  list-style: none;
-  float: left;
-  font-size: 19px; /* 1919の19です */
+.chinpo {
+  padding-top: 100px;
 }
 
 .box {
-  height: 1000px;
-  margin: -1000px 30% 0px 30%;
+  height: 2000px;
+  margin: 0px 30% 0px 30%;
   background: rgba( 255, 255, 255, 0.3 );
   box-shadow: 0 8px 32px 0 rgba( 255, 255, 255, 0.18 );
   backdrop-filter: blur( 5.5px );
@@ -50,6 +44,10 @@ header {
   float: left;
 }
 
+.ID h1,p {
+  color: black;
+}
+
 .name {
   font-size: 50px;
   margin-top: 75px;
@@ -59,8 +57,13 @@ header {
   font-size: 25px;
 }
 
+.fa-solid {
+  display: inline;
+  font-size: 0.8em;
+}
+
 .explain {
-  font-size: 28px;
+  font-size: 25px;
   margin-left: 40px;
 }
 
@@ -87,8 +90,7 @@ header {
 }
 
 .shitama {
-  margin: 20px;
-  margin-left: 40px;
+  margin: 40px 0px 10px 40px;
   font-size: 30px;
 }
 
@@ -97,10 +99,26 @@ header {
   width: 90% !important;
 }
 
+.sentence {
+  font-size: 22px;
+  padding: 15px 40px;
+}
+
+.twitter-timeline{
+  margin-top: 20px;
+}
+
+#joseiki {
+  border-radius: 10px;
+  background: white;
+  display: inline-block;
+  margin-left: 40px;
+  margin-top: 10px;
+}
 
 @media screen and (max-width: 800px) {
  .box {
-   margin: -1000px 5% 0px 5%;
+   margin: 0px 5% 0px 5%;
  }
  .sackey {
    padding: 12.5px;
@@ -138,7 +156,20 @@ header {
   margin-left: 20px;
   font-size: 15px;
 }
-
+.fa-solid {
+  font-size: 0.4em;
+}
+.sentence {
+  font-size: 11px;
+  padding: 7.5px 20px;
+}
+#joseiki {
+  border-radius: 10px;
+  background: white;
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 6px;
+}
 }
 
 
